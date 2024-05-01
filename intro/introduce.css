@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 900;
+    font-style: normal;      
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color :#000000;
+}
+
+a:hover{
+    text-decoration: none;
+    color :#5382e9;
+}
+
+a:active {
+    text-decoration: none;
+    color :#fd71be;
+}
+
+.container{
+    width : 960px;
+    margin: 0 auto;
+}
+
+/* navigation bar */
+nav{
+    background-color: white;
+    background-image: url(./MING-NAV.jpg);
+    background-position: center 45px;
+    background-repeat:no-repeat; 
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 10;
+    height: 80px;
+    line-height: 80px;
+}
+
+.nav-btn {
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.nav-btn>li {
+    font-size : 22px;
+    color :#000000;
+}
+
+/* HEADER */
+
+.hd{
+    position: relative;
+    height: 1080px;
+    text-align: center;
+}
+
+.hd::before{
+    content:"";
+    display: block;
+    position:absolute;
+    z-index: -1;
+    left:0;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background-image: url("./HOMINGO.PNG");
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat; 
+}
+
+.hd .container{
+    position: relative;
+}
+
+/* SECTION `1 */
+
+.sec{
+    padding : 100px 0;
+    background-color: #bce1ff;
+}
+
+.art-hd1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: italic;
+    color: wheat;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;    
+    margin-top:0;
+    margin-bottom: 0;
+}
+.art-hd2{
+    float: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+hr.sec1{
+    border:0;
+    border-top: 3px dashed #bce1ff;
+}
+
+.card-img {
+    float: left;
+    margin-right: 25px;
+}
+
+.intro{
+    font-size: 18px;
+    float: none;
+    text-align: left;
+}
+
+.sec::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* SECTION `2 */
+.sec2{
+    text-align: center;
+    padding : 100px 0;
+    background-color: #d2cef8;
+}
+
+.art2-hd{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: italic;
+    color: wheat;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;    
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+.art2-hd2{
+    float: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+hr.sec2{
+    border:0;
+    border-top: 3px dashed #443b97;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.sec2 article{
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+    padding-bottom: 100px;
+}
+
+.sec2 article:last-child{
+    margin-right: 0;
+}
+
+.sec2 article img{
+    width:100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-img2{
+    overflow: hidden;
+    width : 300px;
+    height: 300px;
+}
+
+.sec2::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* SECTION `3 */
+
+.sec3{
+    position: relative;
+    padding-top:100px;
+    background-image: url("./MOON.jpg");
+    background-size: cover;
+    z-index: -2;
+}
+
+.art3-hd{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: none;
+    text-align: right;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: italic;
+    color: rgb(255, 209, 117);
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;    
+    margin-top:0;
+    margin-bottom: 0;
+}
+.art3-hd2{
+    float: none;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.art-ADV{
+    position: relative;
+    color:whitesmoke;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 100px;
+}
+
+.hl{
+    position: relative;
+}
+
+.hl::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background: #bb5b73;
+    opacity: 0.5;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 1px;
+    z-index: -1;
+    }
+
+.sec3::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* SECTION `4 */
+
+.sec4{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #232229;
+}
+
+.art4-hd{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: italic;
+    color: wheat;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;    
+    margin-top:10px;
+    margin-bottom: 0;
+}
+
+.art4-hd2{
+    float: none;
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+hr.sec4-line{
+    border:0;
+    border-top: 3px dashed #232229;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+
+.art-CRD1{
+    float: left;
+    width: 300px;
+    margin-left: 150px;
+    padding-bottom: 100px;
+}
+
+.art-CRD2{
+    float: right;
+    width: 300px;
+    margin-right: 130px;
+    padding-bottom: 100px;
+}
+
+.CLK{
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding:0;
+}
+
+.sec4 article img{
+    width:100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.cr-img{
+    overflow: hidden;
+    width : 300px;
+    height: 300px;
+}
+.sec4::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* FOOTER */
+.ft{
+    padding: 15px 0;
+    float:none;
+    text-align: center;
+    background-color: #232229;
+    border-top: 0.5px solid #535353;
+}
+
+.cpr{
+    color: #b9b9b9;
+}
